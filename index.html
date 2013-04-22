@@ -288,7 +288,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#section1">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
@@ -389,7 +389,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="assets/img/examples/browser-icon-chrome.png">
+        <img class="featurette-image pull-right" id="section1" src="assets/img/examples/browser-icon-chrome.png">
         <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
@@ -437,6 +437,20 @@
           $('#myCarousel').carousel()
         })
       }(window.jQuery)
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+          }, 900, 'swing', function () {
+            window.location.hash = target;
+          });
+        });
+      });
     </script>
   </body>
 </html>
