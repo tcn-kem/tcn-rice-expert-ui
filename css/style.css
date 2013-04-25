@@ -4,7 +4,7 @@
 
     body {
       padding-top: 50px;
-      padding-bottom: 40px;
+      padding-bottom: 100px;
       color: #5a5a5a;
     }
 
@@ -156,7 +156,31 @@
       letter-spacing: -1px;
     }
 
+    /* Section-3
+    ------------------------- */
+    
+    #section3 {
+      background-color: black;
+    }
 
+    #section3 .header {
+      color: #FFFFFF;
+    }
+
+    .select-box {
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: #FFFFFF;
+      height: 260px;
+      width: 260px;
+      border-radius: 10px;
+      opacity: 0.5;
+    }
+
+    .select-box h1 {
+      text-align: center;
+      color: black;
+    }
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
