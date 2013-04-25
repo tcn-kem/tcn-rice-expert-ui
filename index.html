@@ -17,6 +17,7 @@
     /* Padding below the footer and lighter body text */
 
     body {
+      padding-top: 50px;
       padding-bottom: 40px;
       color: #5a5a5a;
     }
@@ -145,7 +146,8 @@
       margin: 80px 0; /* Space out the Bootstrap <hr> more */
     }
     .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      padding-top: 170px; /* Vertically center images part 1: add padding above and below text. */
+      padding-bottom: 50px;
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
     }
     .featurette-image {
@@ -276,8 +278,9 @@
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
 
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-fixed-top navbar-inverse">
           <div class="navbar-inner">
+          <div class="container">
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -306,6 +309,7 @@
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
+          </div>
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
 
@@ -316,7 +320,7 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
+    <!-- <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
           <img src="assets/img/examples/slide-01.jpg" alt="">
@@ -382,46 +386,53 @@
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
+    </div><!-- /.container marketing -->
 
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      <!--<hr class="featurette-divider">-->
 
       <div class="featurette">
+        <div class="container">
         <img class="featurette-image pull-right" id="section1" src="assets/img/examples/browser-icon-chrome.png">
         <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
       </div>
 
-      <hr class="featurette-divider">
+      <!--<hr class="featurette-divider">-->
 
       <div class="featurette">
+        <div class="container">
         <img class="featurette-image pull-left" src="assets/img/examples/browser-icon-firefox.png">
         <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
       </div>
 
-      <hr class="featurette-divider">
+      <!--<hr class="featurette-divider">-->
 
       <div class="featurette">
+        <div class="container">
         <img class="featurette-image pull-right" src="assets/img/examples/browser-icon-safari.png">
         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
       </div>
 
-      <hr class="featurette-divider">
+      <!--<hr class="featurette-divider">-->
 
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
+      <div class="container">
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2013 TCN, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
-
-    </div><!-- /.container -->
+      </div>
 
 
 
