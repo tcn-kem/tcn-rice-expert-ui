@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carousel Template &middot; Bootstrap</title>
+    <title>TCN Rice Expert</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -24,7 +24,7 @@
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">-->
   </head>
 
-  <body>
+  <body style="min-width: 1000px">
 
 
 
@@ -47,10 +47,11 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#welcome">Home</a></li>
                 <li><a href="#section1">Step 1</a></li>
                 <li><a href="#section2">Step 2</a></li>
                 <li><a href="#section3">Step 3</a></li>
+                <li><a href="#section4">Step 4</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
               </ul>
               <ul class="nav pull-right">
@@ -117,7 +118,7 @@
     </div><!-- /.carousel -->
 
     <!-- Welcome + Introduce App -->
-    <div class="welcome" style="height: 200px; padding: 50px 0">
+    <div class="welcome" id="welcome" style="height: 200px; padding: 50px 0">
       <div class="container">
         <h1>Welcome to, TCN Rice Expert</h1>
       </div>
@@ -169,9 +170,6 @@
 
       <div class="featurette" id="section2">
         <div class="container">
-        <img class="featurette-image pull-left" src="assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
       </div>
 
@@ -184,10 +182,12 @@
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>-->
           <div class="row-fluid">
-            <div class="span3">
+            <div class="span4 offset4" style="margin-bottom: 60px;">
               <h1 class="header">Select Terrain</h1>
             </div>
-            <div class="span4">
+          </div>
+          <div class="row-fluid">
+            <div class="span4 offset2">
               <div class="select-box" id="lowland">
                 <h1>Lowland</h1>
               </div>
@@ -199,7 +199,7 @@
             </div>
           </div>
           <div class="row-fluid">
-            <div class="offset5">
+            <div class="span4 offset4">
               <div class="select-box" id="rainfed">
                 <h1>Rained</h1>
               </div>
@@ -208,10 +208,34 @@
       </div>
       </div>
 
+      <div class="featurette" id="section4">
+        <div class="container">
+          <div class="row-fluid">
+            <h1>Progress Bar</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="progress progress-striped active">
+              <div class="bar bar-success" style="width: 33%;"></div>
+              <div class="bar bar-warning" style="width: 33%;"></div>
+              <div class="bar bar-danger" style="width: 34%;"></div>
+            </div>
+            <div class="row-fluid" style="margin-bottom: 0px">
+              <h2 class="span4">Kind</h1>
+              <h2 class="span4">Province</h1>
+              <h2 class="span4">Terrain</h1>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span4 offset4">
+              <button class="btn btn-large btn-block btn-primary" type="button">Submit</button>
+              <button class="btn btn-large btn-block" type="button">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--<hr class="featurette-divider">-->
 
       <!-- /END THE FEATURETTES -->
-
 
       <!-- FOOTER -->
       <<div class="container">

@@ -156,6 +156,16 @@
       letter-spacing: -1px;
     }
 
+    /* Section-2
+    ------------------------- */
+
+    #section2 {
+      background-image: url('../img/thailand-in-the-world-map.jpg');
+      background-repeat: no-repeat;
+      height: 440px;
+    }
+
+
     /* Section-3
     ------------------------- */
     
@@ -171,8 +181,8 @@
       margin-bottom: 40px;
       padding: 30px;
       background-color: #FFFFFF;
-      height: 260px;
-      width: 260px;
+      height: 230px;
+      width: 230px;
       border-radius: 10px;
       opacity: 0.5;
     }
@@ -180,6 +190,25 @@
     .select-box h1 {
       text-align: center;
       color: black;
+    }
+
+    /* Section-4
+    ------------------------- */
+
+    #section4 {
+      background-color: #edeceb;
+    }
+
+    #section4 h1 {
+      text-align: center;
+    }
+
+    #section4 h2 {
+      text-align: center;
+    }
+
+    #section4 .row-fluid {
+      margin-bottom: 40px;
     }
 
     /* RESPONSIVE CSS
